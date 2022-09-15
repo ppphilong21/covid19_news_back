@@ -23,7 +23,7 @@ let getCRUD = (req, res) => {
 
 let postCRUD = async (req, res) => {
 
-    let message = await CRUDService.creatNewUser(req.body);
+    let message = await CRUDService.createNewUser(req.body);
     console.log(message);
     return res.send("crud-post")
 }
@@ -75,13 +75,6 @@ let getAPIAllUsers = async (req, res) => {
 }
 
 
-
-//export 1 object
-//1 object thì phải có key và value
-// object : {
-//     key : '',
-//     value : '',
-// }
 
 module.exports = {
     getHomePage: getHomePage,

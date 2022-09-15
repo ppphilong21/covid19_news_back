@@ -15,7 +15,6 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   CovidNews.init({
-   // id: DataTypes.STRING,
     type: DataTypes.STRING,
     headingTitle: DataTypes.STRING,
     subTitle: DataTypes.STRING,
